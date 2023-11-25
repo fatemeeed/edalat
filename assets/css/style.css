@@ -1,0 +1,246 @@
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir.woff') format('woff'),
+        url('../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url("../fonts/IRANSans/IRANSansWeb.eot");
+    src: url("../fonts/IRANSans/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/IRANSans/IRANSansWeb.woff") format("woff"),
+        url("../fonts/IRANSans/IRANSansWeb.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Yekan';
+    src: url("../fonts/Yekan.eot");
+    src: url("../fonts/Yekan.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Yekan.woff") format("woff"),
+        url("../fonts/Yekan.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'IranNastaliq';
+    src: url("../fonts/IranNastaliq.eot");
+    src: url("../fonts/IranNastaliq.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/IranNastaliq.woff") format("woff"),
+        url("../fonts/IranNastaliq.ttf") format("truetype");
+    font-weight: normal;
+}
+
+
+
+body {
+    direction: rtl;
+    font-family: 'Vazir' !important;
+    background-color: #FCFCFC;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-default {
+    background-color: #45DC00;
+    padding: 10px !important;
+    font-size: 12px;
+    color: #fff;
+}
+
+.btn-default:hover {
+    border: 1px solid #45DC00;
+    background-color: transparent;
+    color: #45DC00;
+}
+
+.btn-default-outline {
+    border: 1px solid #45DC00;
+    background-color: transparent;
+    color: #45DC00;
+
+}
+
+.btn-default-outline:hover {
+    color: #fff;
+    background-color: #45DC00;
+
+}
+
+
+/* header */
+
+header {
+
+
+
+    background-image: url('../images/Rectangle\ 90.png');
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+
+
+
+}
+
+.header .header-title {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    
+}
+
+.header .header-title img {
+    
+    bottom: -300px;
+   
+}
+
+.header .header-title h3 {
+    font-family: 'IranNastaliq';
+    color: #fff;
+    font-size: 60px;
+    text-shadow: 0 0 20px 0 #fff;
+    
+    
+}
+
+/* header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(1,34,67);
+    background: linear-gradient(135deg, rgba(1,34,67,0.804359243697479) 0%, rgba(1,34,67,0.9640231092436975) 42%, rgba(1,34,67,1) 100%);
+}
+
+header::after{
+    content: '';
+    position: absolute;
+    background-image: url('../images/pattern3.jpg');
+    width:100%;
+    left: 0;
+    top: 0;
+    
+} */
+
+.header-counter {
+
+    position: relative;
+}
+
+.header-counter .counter-item {
+    position: absolute;
+    bottom: -50px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 0 #012245;
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+    font-family: 'yekan';
+
+}
+
+
+/* about */
+
+.about {
+    padding: 80px 0;
+}
+
+.about p {
+    line-height: 30px;
+}
+
+
+/* target */
+
+.target {
+
+    padding: 130px 0 40px 0 ;
+    position: relative;
+
+}
+
+.target .target-overlay {
+    
+    position: absolute;
+    background: rgb(1,34,68);
+    background: linear-gradient(0deg, rgba(1,34,68,0) 0%, rgba(1,34,68,0.15168065517222518) 100%); 
+    
+    width: 100%;
+    height: 400px;
+    transform: skew(-12deg)  rotate(-12deg);
+    
+
+}
+
+/* app */
+
+.app{
+    padding: 50px 0;
+}
+
+
+.app .app-title{
+    color: #45DC00;
+}
+
+
+/* footer */
+
+footer {
+    background: rgb(1, 14, 68);
+    background: linear-gradient(135deg, rgba(1, 14, 68, 1) 0%, rgba(7, 45, 87, 1) 52%, rgba(8, 51, 96, 1) 100%);
+    padding: 50px 0 0 0;
+
+}
+
+footer .contact-title{
+    color: #fff;
+    padding: 20px 0;
+}
+footer  .contact-option{
+    color: #c3c3c3;
+    font-family: 'yekan';
+}
+footer  .contact-option svg{
+    color: #45DC00;
+    padding-left: 5px;
+    font-size: 25px;
+
+}
+
+footer .footer{
+    border-top: 2px solid #FCFCFC;
+    width: 100%;
+   margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    color: #c3c3c3;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    padding-top: 20px;
+}

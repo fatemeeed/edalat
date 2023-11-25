@@ -1,0 +1,229 @@
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir.woff') format('woff'),
+        url('../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Yekan;
+    src: url('../fonts/Yekan.eot');
+    src: url('../fonts/Yekan.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Yekan.woff') format('woff'),
+        url('../fonts/Yekan.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+body {
+    direction: rtl;
+    font-family: 'Vazir' !important;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+ ********************************custom font size**********************************
+*/
+
+.font-size-10 {
+    font-size: 10px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+
+.sidebar .sidebar-header .sidebar-header-title{
+
+    border-bottom: 1px solid #585656;
+    color: #dcdcdc;
+
+}
+.sidebar .sidebar-header .sidebar-header-title h6{
+    padding-bottom: 5px ;
+}
+
+.sidebar-link {
+    font-size: .8rem;
+    margin-top: 0.6rem;
+    padding: .4rem 1rem;
+    display: block;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: #dcdcdc;
+    transition: all .3s;
+    border: 1px solid;
+
+}
+
+.sidebar-link:hover {
+    text-decoration: none;
+    color: #0ac282
+}
+
+.sidebar-link>i {
+    width: 2rem;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    position: relative;
+    padding-top: 10px ;
+
+}
+
+.main .sidebar {
+
+    height: 100vh;
+    width: calc(100% - 1rem);
+    margin: auto;
+    background: -webkit-gradient(linear, left top, right top, from(#0df3a3), to(#0ac282));
+    background: linear-gradient(to top, #585656, #434343);
+    border-radius: 0.3rem;
+}
+
+main .main-header {
+
+    width: calc(100% - 1rem);
+    /* padding: 1rem; */
+    /* min-height: calc(100vh - 3.5rem); */
+    background-color: #f3f3f3;
+    border-radius: 0.3rem;
+    margin: auto;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    padding: 1rem;
+    margin-bottom: 10px;
+
+}
+.header-time{
+    border-left: 1px solid #585656;
+    margin-left: 5px;
+    
+}
+.header-time h6{
+    color: #333333;
+    font-size: .8rem;
+    padding: 0 5px;
+    
+}
+
+.header-body .header-username {
+    color: #333333;
+    font-size: .8rem;
+}
+
+main .main-body {
+
+    width: calc(100% - 1rem);
+    height: calc(100vh - 8rem);
+    padding: 1rem;
+    /* min-height: calc(100vh - 3.5rem); */
+    background-color: #f3f3f3;
+    border-radius: 0.3rem;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+.main-body-header{
+    border-bottom: 1px solid rgb(158, 158, 158);
+}
+.main-body-header h5 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px 0;
+   
+}
+
+ table {
+    font-size: 0.8rem;
+    font-family: Yekan;
+}
+.pay-status{
+    border-right: 1px solid #585656;
+    padding: 0 5px;
+}
+
+
+main .main-footer {
+    width: calc(100% - 2rem);
+    bottom: 0;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    
+
+}
+
+.main-footer p {
+
+    font-size: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+@media only screen and (max-width: 767.98px) {
+    .main-header {
+        display: none;
+    }
+
+    .main-body {
+
+        width: calc(100% - 2rem) !important;
+        position: absolute;
+        top: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+
+    }
+
+    .sidebar-content {
+
+        padding-bottom: 30px;
+
+    }
+
+    .main .sidebar {
+
+        position: relative;
+        height: auto;
+
+    }
+}
+
