@@ -46,7 +46,7 @@ function target() {
     }
   }
   
-  
-  window.addEventListener("scroll", target);
   window.addEventListener("scroll", app);
+  window.addEventListener("scroll", target);
   window.addEventListener("scroll", about);
+  
